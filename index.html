@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="modal active" id="modal">
+        <div id="form-container">
+            <h3>Add Book</h3>
+            <form id="bookForm" action="">
+                <label>Title</label>
+                <input type="text" name="title">
+                <label>Author</label>
+                <input type="text" name="author">
+                <label>Pages</label>
+                <input type="number" name="pages">
+                <label>Image Url</label>
+                <input type="text" name="imgUrl">
+                <input type="radio" name="read" value="read">Read
+
+                <br>
+                <input type="radio" name="read" value="notRead" checked>Not Read
+            </form>
+            <div id="button">Submit</div>
+            <div id="close-form">Close Form</div>
+        </div>
+    </div>
+
+    <div class='active' id="overlay">
+        <div id="title">
+            <h1>Library</h1>
+        </div>
+        <div id="addButton">
+            <h1>Add Book</h1>
+        </div>
+        <div id="container">
+            <div class="grid" id="grid">
+        
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src='script.js'></script>
+</body>
+</html>
